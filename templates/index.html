@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+  body {
+      min-height: 1800px;
+      overflow-x: hidden;
+  }
+  .lead {
+  text-align: center;
+  }
+
+  .display-4 {
+      text-align: center;
+  }
+
+  .img-profil {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border: 2.5px solid rgb(240, 61, 58); 
+  }
+
+  @media (max-width: 1200px) {
+    .img-profil {
+      width: 180px; 
+      height: 180px;
+    }
+  }
+</style>
+</head>
+<body>
+<!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sidah</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active" aria-current="page" href="#profile">Profile</a>
+            <a class="nav-link active" aria-current="page" href="#projects">Project</a>
+            <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a> 
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Home -->
+<section class="jumbotron text-center" id="home">
+  <img src="img/Image.jpeg" alt="Sidah" width="200" class="img-profil rounded-circle shadow-sm img-thumbnail">
+  <h1 class="display-4">Hello, I'm Nurur Rosidah</h1>
+  <p class="lead">Student LX | FullStack Web Development - Grup 1A</p>
+</section>
+<!-- Profile -->
+<section id ="profile">
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <div class="row text-center mb-3">
+              <div class="col">
+                      <h2>Profile</h2>
+              </div>
+            </div>
+          <p class="lead">Saya seorang mahasiswa S1 Sistem Informasi  Universitas Muria Kudus. Saya ingin belajar tentang coding  dan ingin  mengembangkan perangkat lunak, untuk berkontribusi pada pertumbuhan perusahaan dan meningkatkan efisiensi tim.</p>
+      </div>
+  </div>
+</section>
+<!-- Projects -->
+<section style="margin-top: 2rem;" id="projects" class="bg-light py-5">
+  <div class="row text-center mb-3">
+    <div class="col">
+            <h2>Projects</h2>
+    </div>
+  </div>
+<div class="mycards" style="margin-bottom: 15px;">
+    <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+      <div class="col">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/564x/97/6b/c0/976bc03ef04f15285c3ed4eeae14071e.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project Pitch Deck</h5>
+              <div class="subheading mb-3">Business Analyst</div>
+              <p class="card-text">Merancang strategi dalam pengembangan ide platform.</p>
+              <p class="mycomment">October 2023 - December 2023</p>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/564x/6a/36/aa/6a36aa097e67b125714c739a40080a3e.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Website Based Dress Sales</h5>
+              <div class="subheading mb-3">Junior Web Developer</div>
+              <p class="card-text">Membangun desain tampilan dan ide penjualan dalam website.</p>
+              <p class="mycomment">June 2023 - July 2023</p>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/564x/81/38/f1/8138f16859865e1ad8572814561d7d02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UI Prototype Figma</h5>
+              <div class="subheading mb-3">UI Designer</div>
+              <p class="card-text">Merancang antarmuka pengguna (UI) sistem layanan penjualan.</p>
+              <p class="mycomment">April 2022 - June 2022</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Us    -->
+<section id="contact">
+  <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <div class="row">
+          <div class="col-md-8 mx-auto">
+              <form>
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+</body>
+</html>
